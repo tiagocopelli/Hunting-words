@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Caça Palavras</title>
+	<link rel="stylesheet" type="text/css" href="projeto1.css"> 
+	<embed src="Kalimba.mp3" hidden="true">
+    <style>
+        .btn-group{
+            margin-top: 5%;
+        }
+    </style>
+
+</head>
+<body>
+    <?php if (isset($_SESSION['tabela'])) {
+            session_start();
+            session_destroy();
+        }
+    ?>
+	<h3>Caça Palavras</h3>
+
+    <div class="imagem1">
+        <img src="90880.gif" align="right">
+    </div>
+
+    <div class="btn-group">
+        <a href="tableinstumento.php"><button class="button">Nível 1</button></a><br>
+        <a href="tableesporte.php"><button class="button">Nível 2</button></a><br>
+        <a href="tableestado.php"><button class="button">Nível 3</button></a><br>
+        <a href="tablefruta.php"><button class="button">Nível 4</button></a><br>
+        <a href="tableanimal.php"><button class="button">Nível 5</button></a><br>
+        <a href="index.html"><button class="button">Voltar</button></a>
+    </div>
+</body>
+</html>
